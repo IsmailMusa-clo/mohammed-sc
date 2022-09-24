@@ -1,0 +1,489 @@
+/* ---------------------------------------------- */
+/* start index page */
+
+/* start about setting */
+/* end about setting */
+/* start numbers setting */
+.numbers {
+    background-color: rgba(255, 255, 255, 0.57);
+}
+
+.numbers .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 260px;
+}
+
+.numbers .boxes .box {
+    text-align: center;
+}
+
+.numbers .boxes .box .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    background-color: #ffeea9;
+}
+
+.numbers .boxes .box img {
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+    height: 50px;
+}
+
+.numbers .boxes .box:hover img {
+    transform: rotate(360deg);
+}
+
+.numbers .boxes .box h3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+/*@@ start numbers bar media @@*/
+@media (max-width:767px) {
+
+    .numbers .boxes {
+        gap: 50px;
+    }
+
+
+    .numbers .boxes .box img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .numbers .boxes .box h3 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .numbers .boxes {
+        gap: 100px;
+    }
+
+
+    .numbers .boxes .box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .numbers .boxes .box h3 {
+        font-size: 26px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .numbers .boxes {
+        gap: 160px;
+    }
+
+
+    .numbers .boxes .box img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .numbers .boxes .box h3 {
+        font-size: 30px;
+    }
+}
+
+/*@@ end numbers  media @@*/
+/* end numbers setting */
+/* start .conference setting */
+.conference .content .title {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.conference .content .title .btn {
+    padding: 12px 30px;
+    color: #fff;
+    line-height: 10px;
+    border-radius: 10px;
+    background-color: #707070;
+    transition: all 0.3s ease-in-out;
+}
+
+.conference .content .title .btn:hover {
+    background-color: rgba(112, 112, 112, 0.551);
+}
+
+.conference .content .boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.conference .content .boxes .box {
+    background-color: #fff;
+    width: 32%;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.conference .content .boxes .box .img {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    height: 211px;
+    margin-bottom: 12px;
+}
+
+.conference .content .boxes .box h3 {
+    word-spacing: 3px;
+}
+
+.conference .content .boxes .box .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.conference .content .boxes .box .date .t {
+    color: #7F999A;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.conference .content .boxes .box .btn {
+    color: #7F999A;
+    background-color: #F0F0F0;
+    display: block;
+    padding: 13px 0;
+    border-radius: 9px;
+    text-align: center;
+}
+
+/*@@ start conference bar media @@*/
+@media (max-width:767px) {
+
+    .conference .content .title .btn {
+        padding: 8px 17px;
+        color: #fff;
+        line-height: 4px;
+    }
+
+    .conference .content .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conference .content .boxes .box {
+        width: 90%;
+        margin: auto;
+    }
+
+    .conference .content .boxes .box .img {
+        height: 180px;
+    }
+
+    .conference .content .boxes .box h3 {
+        word-spacing: 3px;
+        font-size: 16px;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .conference .content .boxes .box .date .t {
+        font-size: 12px;
+    }
+
+    .conference .content .boxes .box .btn {
+        padding: 8px 0;
+        font-size: 13px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+
+    .conference .content .title .btn {
+        padding: 9px 22px;
+        font-size: 12px;
+    }
+
+    .conference .content .title h3 {
+        font-size: 13px;
+    }
+
+    .conference .content .boxes {
+        flex-wrap: wrap;
+    }
+
+    .conference .content .boxes .box {
+        width: 48%;
+    }
+
+    .conference .content .boxes .box h3 {
+        font-size: 14px;
+        /* text-align: center; */
+    }
+
+
+    .conference .content .boxes .box .date .t {
+        font-size: 13px;
+    }
+
+    .conference .content .boxes .box .btn {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
+
+
+/*@@ end conference  media @@*/
+/* end .conference setting */
+/* start details setting */
+.details {
+    background-color: rgba(255, 255, 255, 0.57);
+}
+
+.details .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.details .content img {
+    width: 470px;
+    height: 470px;
+}
+
+.details .content .text {
+    text-align: center;
+}
+
+.details .content .text h3 {
+    font-size: 32px;
+    color: #191919;
+    margin-bottom: 16px;
+}
+
+.details .content .text p {
+    color: #707070;
+    font-size: 27px;
+    line-height: 1.9;
+    width: 250px;
+}
+
+/*@@ start details bar media @@*/
+@media (max-width:767px) {
+
+    .details .content {
+        gap: 17px;
+    }
+
+    .details .content img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .details .content .text h3 {
+        font-size: 18px;
+    }
+
+    .details .content .text p {
+        font-size: 14px;
+        width: 150px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .details .content {
+        gap: 20px;
+    }
+
+    .details .content img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .details .content .text h3 {
+        font-size: 22px;
+    }
+
+    .details .content .text p {
+        font-size: 18px;
+        width: 200px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .details .content {
+        gap: 30px;
+    }
+
+    .details .content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .details .content .text h3 {
+        font-size: 24px;
+    }
+
+    .details .content .text p {
+        font-size: 18px;
+        width: 220px;
+    }
+}
+
+/*@@ end details  media @@*/
+/* end details setting */
+
+/* start jobs setting */
+
+.success-story .content .title-sec {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    align-items: center;
+}
+
+.success-story .content .title-sec h3 {
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+
+.success-story .content .title-sec h3::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 120%;
+    top: 0px;
+    background-color: #707070;
+    right: -15px;
+    border-radius: 8px;
+}
+
+.success-story .content .boxes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.success-story .content .boxes .box {
+    width: 32%;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+.success-story .content .boxes .box:hover {
+    transform: scale(1.05);
+}
+
+.success-story .content .boxes .box .img {
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.success-story .content .boxes .box p {
+    padding: 0 30px;
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*@@ start jobs bar media @@*/
+@media (max-width:767px) {
+    .success-story .content .title-sec img {
+        width: 50px;
+        height: 50px;
+    }
+    .success-story .content .title-sec h3 {
+        font-size: 18px;
+    }
+    .success-story .content .title-sec h3::before {
+        height: 150%;
+        width: 3px;
+    } 
+      .success-story .content .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .success-story .content .boxes .box {
+        width: 90%;
+        margin: auto;
+    }
+    .success-story .content .boxes .box p {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+
+  
+    .success-story .content .boxes {
+        flex-wrap: wrap;
+    }
+
+    .success-story .content .boxes .box {
+        width: 48%;
+    }
+
+
+}
+
+/*@@ end jobs  media @@*/
+/* end jobs setting */
+
+/* end index page */
+/* ---------------------------------------------- */
+/* start courses page */
+.head {
+    background-image: url(../images/photos/IMG-20191205-WA0188-1024x768.png);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.head .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(25, 25, 25, 0.539);
+    bottom: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.head .head-title {
+    text-align: center;
+}
+
+.head .head-title h3 {
+    padding-top: 200px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* end courses page */
+/* ---------------------------------------------- */

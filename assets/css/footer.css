@@ -1,0 +1,265 @@
+/* start contact-us setting */
+.contact-us {
+    background-color:#fff;
+
+}
+
+.contact-us .content .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us .content .boxes .right-box h3 {
+    color: #191919;
+    font-size: 36px;
+    width: 400px;
+}
+
+.contact-us .content .boxes .left-box {
+    width: 50%;
+}
+
+.contact-us .content .boxes .left-box form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #191919;
+}
+
+.contact-us .content .boxes .left-box form input[type=text],
+.contact-us .content .boxes .left-box form input[type=email] {
+    padding: 10px 20px;
+    width: 85%;
+    border-radius: 11px;
+    background-color: #E3E3E3;
+}
+
+.contact-us .content .boxes .left-box form div {
+    margin-bottom: 10px;
+}
+
+.contact-us .content .boxes .left-box form textarea {
+    background-color: #E3E3E3;
+    width: 540px;
+    height: 156px;
+    resize: none;
+    border-radius: 11px;
+    padding: 15px;
+}
+
+.contact-us .content .boxes .left-box form .e-ph {
+    display: flex;
+    /* gap: 20px; */
+}
+
+.contact-us .content .boxes .left-box form .e-ph div {
+    width: 46%;
+}
+
+.contact-us .content .boxes .left-box form input[type=submit] {
+    padding: 11px 60px;
+    background-color: #7F999A;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 60%;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-us .content .boxes .left-box form input[type=submit]:hover {
+    background-color: rgba(127, 153, 154, 0.49);
+}
+
+/*@@ start contact-us bar media @@*/
+@media (max-width:1199px) {
+    .contact-us .content a {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-us .content .boxes {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .contact-us .content .boxes .right-box h3 {
+        font-size: 18px;
+    }
+
+
+    .contact-us .content .boxes .left-box {
+        width: 100%;
+    }
+
+    .contact-us .content .boxes .left-box form label {
+        font-size: 13px;
+    }
+
+    .contact-us .content .boxes .left-box form input[type=text],
+    .contact-us .content .boxes .left-box form input[type=email] {
+        padding: 10px 17px;
+    }
+
+    .contact-us .content .boxes .left-box form textarea {
+        width: 85%;
+        height: 130px;
+    }
+
+
+    .contact-us .content .boxes .left-box form input[type=submit] {
+        padding: 8px 40px;
+        font-size: 13px;
+        margin-right: 0;
+    }
+
+
+}
+
+/*@@ end contact-us  media @@*/
+/* end contact-us setting */
+/* end main setting */
+/* /////////////////////////////////////////////////// */
+/* start footer setting */
+footer .links .content .logo {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+footer .links .content .logo img {
+    width: 65px;
+    height: 65px;
+}
+
+footer .links .content .logo .text {
+    position: relative;
+}
+
+footer .links .content .logo .text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #DBB8A5;
+}
+
+footer .links .content .ls {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .links .content .ls ul {
+    width: 23%;
+}
+
+footer .links .content .ls ul h3 {
+    margin-bottom: 10px;
+    color: #191919;
+}
+
+footer .links .content .ls ul li a {
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #707070;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .links .content .ls ul li a:hover {
+    color: rgba(112, 112, 112, 0.554);
+}
+
+/*@@ start links bar media @@*/
+@media (max-width:991px) {
+
+    footer .links .content .ls {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .links .content .ls ul {
+        width: 100%;
+    }
+
+    footer .links .content .ls ul::after {
+        content: "";
+        display: block;
+        right: 0;
+        left: 0;
+        height: 1px;
+        background-color: #707070;
+    }
+
+    footer .links .content .ls ul h3 {
+        font-size: 17px;
+    }
+
+}
+
+/*@@ end links  media @@*/
+.foot {
+    background-color: rgba(0, 0, 0, 0.587);
+    padding: 15px 0;
+}
+
+.foot .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot .content h3 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.foot .content ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    align-items: center ;
+}
+
+.foot .content ul li a {
+    color: #fff;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.foot .content ul li:hover a {
+    color:gold;
+}
+
+/*@@ start foot bar media @@*/
+@media(max-width:991px) {
+
+
+    .foot .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .foot .content h3 {
+        font-size: 14px;
+    }
+
+    .foot .content ul {
+        gap: 20px;
+    }
+
+    .foot .content ul li a {
+        font-size: 16px;
+    }
+}
+
+
+
+/*@@ end foot  media @@*/
+/* end footer setting */

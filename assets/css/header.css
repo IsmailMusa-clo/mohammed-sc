@@ -1,0 +1,289 @@
+/* start header setting */
+/* start navbar setting */
+header nav {
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 92px;
+    background-color: #fff;
+}
+
+header nav .content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 90px;
+}
+
+header nav .content .logo {
+    margin-top: 10px;
+}
+
+header nav .content .logo a {
+    display: flex;
+    gap: 30px;
+    color: #000;
+    align-items: center;
+}
+
+header nav .content .logo img {
+    width: 65px;
+    height: 65px;
+}
+
+header nav .content .logo .text {
+    position: relative;
+}
+
+header nav .content .logo .text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: rgba(6, 149, 61, 0.5);
+}
+
+header nav .content ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+header nav .content ul li {
+    position: relative;
+}
+
+header nav .content ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #8D8D8D;
+    bottom: 35px;
+    width: 0%;
+    left: 0;
+    transition: all 0.4s linear;
+}
+
+header nav .content ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #8D8D8D;
+    top: 40px;
+    width: 0%;
+    transition: all 0.4s linear;
+}
+
+header nav .content ul li:hover::after {
+    width: 100%;
+}
+
+header nav .content ul li:hover::before {
+    width: 100%;
+}
+
+header nav .content ul li:hover a {
+    color: #b54a4a;
+}
+
+header nav .content ul li a {
+    color: #8D8D8D;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .content ul li.active::after {
+    background-color: #000;
+}
+
+header nav .content ul li.active a {
+    color: #000;
+}
+
+header nav .content .bar {
+    display: none;
+    color: #191919;
+}
+
+header nav .content .btn {
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #7F999A;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+header nav .content .btn:hover {
+    background-color: rgba(127, 153, 154, 0.488);
+}
+
+/*@@ start nav bar media @@*/
+@media (max-width:991px) {
+    header nav .content {
+        height: 80px;
+    }
+
+    header nav .content .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header nav .content .logo .text h3 {
+        font-size: 16px;
+    }
+
+    header nav .content .logo .text h6 {
+        font-size: 9px;
+    }
+
+    header nav .content .logo .text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -20px;
+        width: 5px;
+        border-radius: 10px;
+        background-color: #DBB8A5;
+    }
+
+    header nav .content ul {
+        display: none;
+    }
+
+    header nav .content .btn {
+        display: none;
+    }
+
+    header nav .content .bar {
+        display: block;
+    }
+
+    header nav .content .bar i {
+        margin-top: 36px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    header nav .content .bar:hover i {
+        color: #7F999A;
+    }
+    
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    header nav .content .logo {
+        gap: 20px;
+    }
+
+    header nav .content .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    header nav .content .logo .text::before {
+        right: -10px;
+    }
+
+    header nav .content ul {
+        gap: 20px;
+    }
+
+    header nav .content ul li a {
+        font-size: 15px;
+    }
+
+    header nav .content .btn {
+        padding: 8px 17px;
+        margin-top: 28px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+}
+
+
+/*@@ end nav bar media @@*/
+
+/* end navbar setting */
+/* start nav-bars-icons setting */
+header .nav-bars-icons {
+    display: none;
+    width: 80%;
+    position: absolute;
+    top: 95px;
+    left: 10%;
+    height: 88vh;
+    background-color: #191919e7;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 100;
+    gap: 20px;
+}
+
+header .nav-bars-icons ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20px;
+    gap: 40px;
+}
+
+header .nav-bars-icons ul li{
+    padding: 10px 30%;
+}
+header .nav-bars-icons ul li:hover  {
+    background-color: #7F999A;
+}
+header .nav-bars-icons ul li:hover a {
+    color: #e1e1e1;
+}
+
+header .nav-bars-icons ul li a {
+    color: #fff;
+    font-size: 22px;
+    
+    transition: all 0.4s ease-in-out;
+}
+
+header .nav-bars-icons ul li.active {
+    background-color: #fff;
+    padding:8px 50px;
+    /* line-height: 5px; */
+    border-radius: 15px;
+}
+
+header .nav-bars-icons ul li.active a {
+    color: #000;
+}
+
+header .nav-bars-icons .btn {
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #7F999A;
+    margin-top: 10px;
+    width: 140px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+header .nav-bars-icons .btn:hover {
+    border: 1px solid #7F999A;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+/* end nav-bars-icons setting */
+
+/* end header setting */
